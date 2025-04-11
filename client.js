@@ -5,7 +5,7 @@ window.TrelloPowerUp.initialize({
       callback: function(t) {
         return t.card('id')
           .then(function(card) {
-            const webhookUrl = `https://n8n.api-blogfeelgood.fun/webhook-test/criar-campanha-redtrack?cardId=${card.id}`;
+            const webhookUrl = `https://n8n.api-blogfeelgood.fun/webhook/criar-campanha-redtrack?cardId=${card.id}`;
             return fetch(webhookUrl, {
               method: 'GET'
             })
